@@ -5,8 +5,10 @@ into [Lojban](http://lojban.org).
 
 ## Translation
 
-Current state: Only a few things are translated: Prof. Oak's opening speech and
+**Current state:** Only a few things are translated: Prof. Oak's opening speech and
 item names, and some other miscellaneous dialogue.
+
+**Priorities:** Names of Pokemon and attacks.
 
 Pull requests are most welcome, as are "bugs" filed with translations, if you
 aren't prepared to edit the assembly itself.
