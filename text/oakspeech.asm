@@ -1,55 +1,62 @@
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+        ;     12345678901234567
+        text "coi fi'i do'u"     ;text "Hello there!"
+        line "ti terdi lo pokma" ;line "Welcome to the"
+        cont ".i mi'e la cindu"  ;cont "world of #MON!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
-	prompt
+        para ".i lo drata ku"    ;para "My name is OAK!"
+        line "mi te cmene"       ;line "People call me"
+        cont "zo pokctu"         ;cont "the #MON PROF!"
+        prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@@"
+        ;     12345678901234567
+	text ".i lo terdi cu"    ;text "This world is"
+	line "se xabju lo"       ;line "inhabited by"
+        cont "pokma@@"           ;cont "creatures called"
+	;cont "#MON!@@"
 
 _OakSpeechText2B::
-	text $51,"For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+        ;     12345678901234567
+	text $51,".i su'o prenu" ;text $51,"For some people,"
+	line "zo'u py. dalpe'o"  ;line "#MON are"
+	cont ".i su'o drata py." ;cont "pets. Others use"
+        cont "lo nu damba"       ;cont "them for fights."
 
-	para "Myself..."
+	para ".i mi .y."         ;para "Myself..."
 
-	para "I study #MON"
-	line "as a profession."
+	para ".i mi tadni be"    ;para "I study #MON"
+	line "py. co se jibni"   ;line "as a profession."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text ".i pa mai ma do"   ;text "First, what is"
+	line "cmene?"            ;line "your name?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+        ;     12345678901234567
+	text ".i ti mi besy-"    ;text "This is my grand-"
+	line "bersa .i ti do"    ;line "son. He's been"
+	cont "jivna co'a lo nu"  ;cont "your rival since"
+	cont "do cifnu"          ;cont "you were a baby."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para ".i .y. .oi ro'a"   ;para "...Erm, what is"
+	line "ma ti cmene?"      ;line "his name again?"
 	prompt
 
 _OakSpeechText3::
-	text $52,"!"
+        ;     12345678901234567
+	text ".i ju'i"
+        line "la ",$52  ;text $52,"!"  <PLAYER>
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para ".i lo do pokma"    ;para "Your very own"
+        line "ranmi cu ba zi"    ;line "#MON legend is"
+        cont "cfari"             ;cont "about to unfold!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+        para ".i le munje be lo" ;para "A world of dreams"
+        line "selsne je nu"      ;line "and adventures"
+        cont "zabna capkylitru"  ;cont "with #MON"
+        cont "cu denpa"          ;cont "awaits! Let's go!"
+        cont ".i .e'u cfagau"
 	done

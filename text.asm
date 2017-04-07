@@ -68,25 +68,29 @@ _BoulderText::
 	done
 
 _MartSignText::
-	text "All your item"
-	line "needs fulfilled!"
-	cont "#MON MART"
+        ;     12345678901234567"
+	text "lo do dakli cu"    ;text "All your item"
+	line "culno vi"          ;line "needs fulfilled!"
+        cont "lo pokma zarci"    ;cont "#MON MART"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+        text "ka'ogau lo do"     ;text "Heal Your #MON!"
+        line "pokma vi lo"       ;line "#MON CENTER"
+        cont "pokma spita"
 	done
 
 _FoundItemText::
-	text "<PLAYER> found"
+        ;     12345678901234567"
+	text "la <PLAYER>. lebna" ;text "<PLAYER> found"  - overrun OK
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _NoMoreRoomForItemText::
-	text "No more room for"
-	line "items!"
+        ;     12345678901234567"
+        text "noda canlu lo"     ;text "No more room for"
+        line "dacti"             ;line "items!"
 	done
 
 _OaksAideHiText::
@@ -801,10 +805,11 @@ _IndigoPlateauHQText::
 	done
 
 _RedBedroomSNESText::
-	text "<PLAYER> is"
-	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+        ;     12345678901234567"
+        text "la <PLAYER>. ca"   ;text "<PLAYER> is"
+        line "kelci la .snes."   ;line "playing the SNES!"
+	cont ".y. ta'onai"       ;cont "...Okay!"
+        cont "ko co'a klama"     ;cont "It's time to go!"
 	done
 
 _Route15UpstairsBinocularsText::
@@ -1902,14 +1907,15 @@ _DoYouWantToNicknameText::
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+        ;    "12345678901234567"
+        text "je'e .i zo"        ;text "Right! So your"
+        line "<PLAYER> cmene do" ;line "name is <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+        text "ie mi ca morji .i"    ;text "That's right! I"
+        line "zo <RIVAL> cmene"     ;line "remember now! His"
+	;cont "name is <RIVAL>!"
 	prompt
 
 _WillBeTradedText::
