@@ -593,7 +593,7 @@ DrawTrainerInfo:
 	coord hl, 2, 2
 	ld de,TrainerInfo_NameMoneyTimeText
 	call PlaceString
-	coord hl, 7, 2
+	coord hl, 8, 2
 	ld de,wPlayerName
 	call PlaceString
 	coord hl, 8, 4
@@ -615,13 +615,13 @@ TrainerInfo_FarCopyData:
 	jp FarCopyData2
 
 TrainerInfo_NameMoneyTimeText:
-	db   "NAME/"
-	next "MONEY/"
-	next "TIME/@"
+	db   "CMENE/"
+	next "JDINI/"
+	next "TEMCI/@"
 
 ; $76 is a circle tile
 TrainerInfo_BadgesText:
-	db $76,"BADGES",$76,"@"
+	db $76,"SINXA",$76,"@"
 
 ; draws a text box on the trainer info screen
 ; height is always 6
