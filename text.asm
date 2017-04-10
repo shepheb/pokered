@@ -69,21 +69,21 @@ _BoulderText::
 
 _MartSignText::
         ;     12345678901234567"
-	text "lo do dakli cu"    ;text "All your item"
-	line "culno vi"          ;line "needs fulfilled!"
-        cont "lo pokma zarci"    ;cont "#MON MART"
+	text "mi'a vecnu ro da"    ;text "All your item"
+	line "poi do nitcu ke'a!"          ;line "needs fulfilled!"
+    cont "i POKMONE ZARCI"    ;cont "#MON MART"
 	done
 
 _PokeCenterSignText::
-        text "ka'ogau lo do"     ;text "Heal Your #MON!"
-        line "pokma vi lo"       ;line "#MON CENTER"
-        cont "pokma spita"
+    text "ko kanrygau lo "     ;text "Heal Your #MON!"
+    line "POKMONE pe do!"       ;line "#MON CENTER"
+    cont "i POKMONE RALDI'U"
 	done
 
 _FoundItemText::
         ;     12345678901234567"
-	text "la <PLAYER>. lebna" ;text "<PLAYER> found"  - overrun OK
-	line "@"
+	text "la <PLAYER> cu zvafa'i" ;text "<PLAYER> found"  - overrun OK
+	line "pa @"
 	TX_RAM wcf4b
 	text "!@@"
 
@@ -796,7 +796,7 @@ _WhatGoesAroundComesAroundText::
 	done
 
 _FightingDojoText::
-	text "FIGHTING DOJO"
+	text "DAMDI'U"
 	done
 
 _IndigoPlateauHQText::
@@ -805,11 +805,11 @@ _IndigoPlateauHQText::
 	done
 
 _RedBedroomSNESText::
-        ;     12345678901234567"
-        text "la <PLAYER>. ca"   ;text "<PLAYER> is"
-        line "kelci la .snes."   ;line "playing the SNES!"
-	cont ".y. ta'onai"       ;cont "...Okay!"
-        cont "ko co'a klama"     ;cont "It's time to go!"
+    ;     12345678901234567"
+    text "la <PLAYER>. ca"   ;text "<PLAYER> is"
+    line "kelci la .snes."   ;line "playing the SNES!"
+	cont "... i y ta'o nai"       ;cont "...Okay!"
+    cont "ko co'a klama"     ;cont "It's time to go!"
 	done
 
 _Route15UpstairsBinocularsText::
@@ -1908,13 +1908,14 @@ _DoYouWantToNicknameText::
 
 _YourNameIsText::
         ;    "12345678901234567"
-        text "je'e .i zo"        ;text "Right! So your"
+        text "ua je'e i zo"        ;text "Right! So your"
         line "<PLAYER> cmene do" ;line "name is <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-        text "ie mi ca morji .i"    ;text "That's right! I"
-        line "zo <RIVAL> cmene"     ;line "remember now! His"
+        text "ie! i mi ca morji"    ;text "That's right! I"
+        line "i ra se cmene"     ;line "remember now! His"
+		cont "zo <RIVAL>!"
 	;cont "name is <RIVAL>!"
 	prompt
 
@@ -2013,13 +2014,13 @@ _FileDataDestroyedText::
 	prompt
 
 _WouldYouLikeToSaveText::
-	text "Would you like to"
-	line "SAVE the game?"
+	text "xu do djica lo nu"
+	line "VREJGAU lo cabna?"
 	done
 
 _GameSavedText::
-	text "<PLAYER> saved"
-	line "the game!"
+	text "la <PLAYER> ba'o"
+	line "vrejgau lo cabna!"
 	done
 
 _OlderFileWillBeErasedText::
@@ -2434,8 +2435,8 @@ INCLUDE "text/maps/saffron_pokecenter.asm"
 INCLUDE "text/maps/mr_psychics_house.asm"
 
 _PokemartGreetingText::
-	text "Hi there!"
-	next "May I help you?"
+	text "coi do! i xu"
+	next "mi ka'e sidju do?"
 	done
 
 _PokemonFaintedText::
@@ -2508,7 +2509,7 @@ _PokemartUnsellableItemText::
 	prompt
 
 _PokemartThankYouText::
-	text "Thank you!"
+	text "ki'e do!"
 	done
 
 _PokemartAnythingElseText::
