@@ -500,13 +500,13 @@ PrintNamingText:
 	jp PlaceString
 
 YourTextString:
-	db "YOUR @"
+	db "DO SE"
 
 RivalsTextString:
-	db "RIVAL's @"
+	db "JIVNA @"
 
 NameTextString:
-	db "NAME?@"
+	db "CMENE@"
 
 NicknameTextString:
-	db "NICKNAME?@"
+	db "DRATCME?@"

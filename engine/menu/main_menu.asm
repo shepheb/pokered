@@ -329,16 +329,16 @@ SpecialEnterMap:
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE", $4e
+	db "DI'A KELCI", $4e
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   "CNINO VREJI"
+	next "STIKYGAU@"
 
 CableClubOptionsText:
 	db   "TRADE CENTER"
 	next "COLOSSEUM"
-	next "CANCEL@"
+	next "STIGAU@"
 
 DisplayContinueGameInfo:
 	xor a
@@ -421,10 +421,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
-	next "BADGES    "
-	next "#DEX    "
-	next "TIME@"
+	db   "KELCI"
+	next "SINXA    "
+	next "POKéCUK  "
+	next "TEMCI@"
 
 DisplayOptionMenu:
 	coord hl, 0, 0
@@ -562,15 +562,15 @@ DisplayOptionMenu:
 	sub a,6
 	jr .updateTextSpeedXCoord
 .fromSlowToMedium
-	sub a,7
+	sub a,6
 	jr .updateTextSpeedXCoord
 .pressedRightInTextSpeed
 	ld a,[wOptionsTextSpeedCursorX] ; text speed cursor X coordinate
-	cp a,14
+	cp a,13
 	jr z,.updateTextSpeedXCoord
 	cp a,7
 	jr nz,.fromFastToMedium
-	add a,7
+	add a,6
 	jr .updateTextSpeedXCoord
 .fromFastToMedium
 	add a,6
@@ -579,19 +579,19 @@ DisplayOptionMenu:
 	jp .eraseOldMenuCursor
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " FAST  MEDIUM SLOW@"
+	db   "LERFU NILSUTRA"
+	next " SUTRA NUTLI MASNO@"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
+	db   "DAMBA NUNMUVDU"
+	next " VISKA    NA GO'I@"
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   "DAMBA KLESI"
+	next " CANJA    STODI@"
 
 OptionMenuCancelText:
-	db "CANCEL@"
+	db "STIGAU@"
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions:
@@ -675,7 +675,7 @@ SetCursorPositionsFromOptions:
 ; 00: X coordinate of menu cursor
 ; 01: delay after printing a letter (in frames)
 TextSpeedOptionData:
-	db 14,5 ; Slow
+	db 13,5 ; Slow
 	db  7,3 ; Medium
 	db  1,1 ; Fast
 	db 7 ; default X coordinate (Medium)
