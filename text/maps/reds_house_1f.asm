@@ -1,12 +1,12 @@
 _MomWakeUpText::
-	text "MOM: Right."
-	line "All boys leave"
-	cont "home some day."
-	cont "It said so on TV."
+	text "i'a ie "
+	line "i ti'e ro nanla"
+	cont "ca su'o djedi"
+	cont "cu cliva lo zdani"
 
-	para "PROF.OAK, next"
-	line "door, is looking"
-	cont "for you."
+	para "i la CTUC CINDU"
+	line "bu'u lo zvala'i"
+	cont "ca'o zvasisku do"
 	done
 
 _MomHealText1::
