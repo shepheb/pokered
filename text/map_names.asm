@@ -19,11 +19,11 @@ CinnabarIslandName:
 	db "xunrokci daplu@"   ;db "CINNABAR ISLAND@"
 IndigoPlateauName:
 	db "indigo pinma'a@"   ;db "INDIGO PLATEAU@"
-        ; indigo is a fu'ivla. pinma'a = flat-mountain
+	; indigo is a fu'ivla. pinma'a = flat-mountain
 SaffronCityName:
 	db "pelxu tcadu@"      ;db "SAFFRON CITY@"
 Route1Name:
-        db "dargu xi pa@"      ;db "ROUTE 1@"
+	db "dargu xi pa@"      ;db "ROUTE 1@"
 Route2Name:
 	db "dargu xi re@"      ;db "ROUTE 2@"
 Route3Name:
@@ -73,36 +73,36 @@ Route24Name:
 Route25Name:
 	db "dargu xi remu@"    ;db "ROUTE 25@"
 ViridianForestName:
-        db "crino ricfoi@"     ;db "VIRIDIAN FOREST@" "green forest"
+	db "crino ricfoi@"     ;db "VIRIDIAN FOREST@" "green forest"
 MountMoonName:
-        db "lunra cmana@"      ;db "MT.MOON@" TODO different phrasing?
+	db "lunra cmana@"      ;db "MT.MOON@" TODO different phrasing?
 RockTunnelName:
-        db "rokci kevlu'a@"    ;db "ROCK TUNNEL@"
+	db "rokci kevlu'a@"    ;db "ROCK TUNNEL@"
 SeaCottageName:
-        db "xamsi re'azda@"    ;db "SEA COTTAGE@"
+	db "xamsi re'azda@"    ;db "SEA COTTAGE@"
 SSAnneName:
-        db "bloti me'e .an.@"  ;db "S.S.ANNE@"
+	db "bloti me'e .an.@"  ;db "S.S.ANNE@"
 PokemonLeagueName:
-        db "pokma torneio@"    ;db "#MON LEAGUE@" TODO league != tournament.
+	db "pokma torneio@"    ;db "#MON LEAGUE@" TODO league != tournament.
 UndergroundPathName:
-        db "loni'a pluta@"     ;db "UNDERGROUND PATH@"
+	db "loni'a pluta@"     ;db "UNDERGROUND PATH@"
 PokemonTowerName:
-        db "pokma slanydi'u@"  ;db "#MON TOWER@" TODO other lujvo for "tower"
+	db "pokma slanydi'u@"  ;db "#MON TOWER@" TODO other lujvo for "tower"
 SeafoamIslandsName:
-        db "xasfo'o daplu@"    ;db "SEAFOAM ISLANDS@"
+	db "xasfo'o daplu@"    ;db "SEAFOAM ISLANDS@"
 VictoryRoadName:
-        db "jinga pluta@"      ;db "VICTORY ROAD@"
+	db "jinga pluta@"      ;db "VICTORY ROAD@"
 DiglettsCaveName:
 	db "la .cautup. kevzda";db "DIGLETT's CAVE@" TODO too long?
 RocketHQName:
 	db "jaknyzda@"         ;db "ROCKET HQ@" rocket-home
 SilphCoName:
-        db "la .kag.silf.@"    ;db "SILPH CO.@"
+	db "la .kag.silf.@"    ;db "SILPH CO.@"
 PokemonMansionName:
 	db "pokma balzda@"     ;db $4a," MANSION@" pokemon grand-house
 SafariZoneName:
-        db "li'ukatytu'a@"     ;db "SAFARI ZONE@" travel-hunt-land
+	db "li'ukatytu'a@"     ;db "SAFARI ZONE@" travel-hunt-land
 CeruleanCaveName:
-        db "blanu kevna@"      ;db "CERULEAN CAVE@" blue cavern
+	db "blanu kevna@"      ;db "CERULEAN CAVE@" blue cavern
 PowerPlantName:
 	db "dicpradi'u@"       ;db "POWER PLANT@" electricity-producing-building
