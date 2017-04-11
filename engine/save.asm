@@ -171,7 +171,7 @@ SaveSAV:
 	jp DelayFrames
 
 NowSavingString:
-	db "Now saving...@"
+	db "ca'o vrejgau..."
 
 SaveSAVConfirm:
 	call PrintText

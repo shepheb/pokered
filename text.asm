@@ -22,35 +22,37 @@ INCLUDE "hram.asm"
 SECTION "Text 1", ROMX[$4000], BANK[TEXT_1]
 
 _CardKeySuccessText1::
-	text "Bingo!@@"
+	text "snada@@@"
 
 _CardKeySuccessText2::
 	text ""
-	line "The CARD KEY"
-	cont "opened the door!"
+	;     12345678901234567
+	line "lo ckiku karda cu"    ; line "The CARD KEY"
+	cont "kargau lo vorme"      ; cont "opened the door!"
 	done
 
 _CardKeyFailText::
-	text "Darn! It needs a"
-	line "CARD KEY!"
+	text ".uinai nitcu"      ; text "Darn! It needs a"
+	line "lo ckiku karda"    ; line "CARD KEY!"
 	done
 
 _TrainerNameText::
-	TX_RAM wcd6d
+	TX_RAM wcd6d    ; TODO: Maybe 'la' here? Not sure it'll work.
 	text ": @@"
 
 _NoNibbleText::
-	text "Not even a nibble!"
+	text "no da batci"     ; text "Not even a nibble!"
 	prompt
 
 _NothingHereText::
-	text "Looks like there's"
-	line "nothing here."
+	text "ti kunti"
+	; text "Looks like there's"
+	; line "nothing here."
 	prompt
 
 _ItsABiteText::
-	text "Oh!"
-	line "It's a bite!"
+	text ".uesai"         ; text "Oh!"
+	line "da batci"       ; line "It's a bite!"
 	prompt
 
 _ExclamationText::
@@ -68,103 +70,105 @@ _BoulderText::
 	done
 
 _MartSignText::
-	text "All your item"
-	line "needs fulfilled!"
-	cont "#MON MART"
+	;     12345678901234567"
+	text "mi'a vecnu ro da"    ;text "All your item"
+	line "poi do nitcu ke'a!"          ;line "needs fulfilled!"
+    cont "i POKMONE ZARCI"    ;cont "#MON MART"
 	done
 
 _PokeCenterSignText::
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+    text "ko kanrygau lo "     ;text "Heal Your #MON!"
+    line "POKMONE pe do!"       ;line "#MON CENTER"
+    cont "i POKMONE RALDI'U"
 	done
 
 _FoundItemText::
-	text "<PLAYER> found"
-	line "@"
+	;     12345678901234567"
+	text "la <PLAYER> cu zvafa'i" ;text "<PLAYER> found"  - overrun OK
+	line "pa @"
 	TX_RAM wcf4b
 	text "!@@"
 
 _NoMoreRoomForItemText::
-	text "No more room for"
-	line "items!"
+	;     12345678901234567"
+	text "noda canlu lo"     ;text "No more room for"
+	line "dacti"             ;line "items!"
 	done
 
 _OaksAideHiText::
-	text "Hi! Remember me?"
-	line "I'm PROF.OAK's"
-	cont "AIDE!"
+	;     12345678901234567
+	text "coi xu morji"      ; text "Hi! Remember me?"
+	line "fi mi?"            ; line "I'm PROF.OAK's"
+	cont "mi sidju la CINDU" ; cont "AIDE!"
 
-	para "If you caught @"
+	para "da'i do kavbu @"     ; para "If you caught @"
 	TX_NUM hOaksAideRequirement, 1, 3
 	text ""
-	line "kinds of #MON,"
-	cont "I'm supposed to"
-	cont "give you an"
+	line "lo klesi be lo"    ; line "kinds of #MON,"
+	cont "pokma .i .ei mi"   ; cont "I'm supposed to"
+	cont "dunda lo"
 	cont "@"
 	TX_RAM wOaksAideRewardItemName
 	text "!"
 
-	para "So, <PLAYER>! Have"
-	line "you caught at"
-	cont "least @"
+	;     12345678901234567
+	para "doi la <PLAYER>"    ; para "So, <PLAYER>! Have"
+	line "xu do kavbu @"      ; line "you caught at"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds of"
-	cont "#MON?"
+	text "klesi be lo pokma"  ; cont "least @"
 	done
 
 _OaksAideUhOhText::
-	text "Let's see..."
-	line "Uh-oh! You have"
-	cont "caught only @"
+	text ".uinai za'a do pu"  ; text "Let's see..."
+	line "kavbu @"            ;line "Uh-oh! You have"
+	; cont "caught only @"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
-	text ""
-	cont "kinds of #MON!"
+	text "@lo"
+	cont "klesi be lo pokma"  ; cont "kinds of #MON!"
 
-	para "You need @"
+	para "lo nu do kavbu"     ; para "You need @"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text " kinds"
-	line "if you want the"
-	cont "@"
+	line "pokma kei sarcu"    ; line "if you want the"
+	cont "lo nu dunda"
+	cont "lo @"
 	TX_RAM wOaksAideRewardItemName
-	text "."
 	done
 
 _OaksAideComeBackText::
-	text "Oh. I see."
+	text "uecu'i mi jinvi"     ; text "Oh. I see."
 
-	para "When you get @"
+	para "ba lo nu do"         ; para "When you get @"
+	line "kavbu @"
 	TX_NUM hOaksAideRequirement, 1, 3
 	text ""
-	line "kinds, come back"
-	cont "for @"
-	TX_RAM wOaksAideRewardItemName
-	text "."
+	;     12345678901234567
+	line "klesi  kei ko"       ; line "kinds, come back"
+	cont "xruti .i mi dunda"
 	done
 
 _OaksAideHereYouGoText::
-	text "Great! You have"
-	line "caught @"
+	text ".uisai do pu"      ; text "Great! You have"
+	line "kavbu @"           ; line "caught @"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
-	text " kinds "
-	cont "of #MON!"
-	cont "Congratulations!"
+	text "klesi lo pokma"    ; text " kinds " cont "of #MON!"
+	cont "i do snada uidai"  ; cont "Congratulations!"
 
-	para "Here you go!"
+	para "i ko cpazau"       ; para "Here you go!"
 	prompt
 
 _OaksAideGotItemText::
-	text "<PLAYER> got the"
-	line "@"
+	text "la <PLAYER> cpacu" ; text "<PLAYER> got the"
+	line "lo @"
 	TX_RAM wOaksAideRewardItemName
-	text "!@@"
+	text "@@@"
 
 _OaksAideNoRoomText::
-	text "Oh! I see you"
-	line "don't have any"
-	cont "room for the"
-	cont "@"
+	;     12345678901234567
+	text "oi mi viska lo nu"   ; text "Oh! I see you"
+	line "no da canlu lo"      ; line "don't have any"
+	cont "@"                   ; cont "room for the"
 	TX_RAM wOaksAideRewardItemName
-	text "."
+	text ""
 	done
 
 INCLUDE "text/maps/viridian_forest.asm"
@@ -230,167 +234,174 @@ INCLUDE "text/maps/rock_tunnel_b2f_2.asm"
 INCLUDE "text/maps/seafoam_islands_b4f.asm"
 
 _AIBattleWithdrawText::
+	text "la @"
 	TX_RAM wTrainerName
-	text " with-"
-	line "drew @"
+	line "xruti"
+	cont "lo @"
 	TX_RAM wEnemyMonNick
-	text "!"
+	text ""
 	prompt
 
 _AIBattleUseItemText::
+	text "la @"
 	TX_RAM wTrainerName
 	text ""
-	line "used @"
+	line "pilno @"
 	TX_RAM wcd6d
 	text ""
-	cont "on @"
+	cont "lo @"
 	TX_RAM wEnemyMonNick
-	text "!"
+	text ""
 	prompt
 
 _TradeWentToText::
+	text "la @"
 	TX_RAM wcf4b
-	text " went"
-	line "to @"
+	text " klama"
+	line "la @"
 	TX_RAM wGrassRate
-	text "."
+	text ""
 	done
 
 _TradeForText::
-	text "For <PLAYER>'s"
+	text "canja lo do"
 	line "@"
 	TX_RAM wcf4b
-	text ","
+	text ""
 	done
 
 _TradeSendsText::
-	TX_RAM wGrassRate
-	text " sends"
+	text "lo ko'a"
 	line "@"
 	TX_RAM wcd6d
-	text "."
 	done
 
 _TradeWavesFarewellText::
+	text "la@"
 	TX_RAM wGrassRate
-	text " waves"
-	line "farewell as"
+	line "tolrinsa ca"
 	done
 
 _TradeTransferredText::
+	text "lo nu benji la"
+	line ""
 	TX_RAM wcd6d
-	text " is"
-	line "transferred."
+	text ""
 	done
 
 _TradeTakeCareText::
-	text "Take good care of"
+	text "ko kurji la"
 	line "@"
 	TX_RAM wcd6d
-	text "."
+	text ""
 	done
 
 _TradeWillTradeText::
+	text "la @"
 	TX_RAM wGrassRate
-	text " will"
-	line "trade @"
+	line " friti lo"
+	cont "@"
 	TX_RAM wcd6d
 	text ""
 	done
 
 _TradeforText::
-	text "for <PLAYER>'s"
-	line "@"
+	text "fo la @"
 	TX_RAM wcf4b
-	text "."
+	line "pe la <PLAYER>"
 	done
 
 _PlaySlotMachineText::
-	text "A slot machine!"
-	line "Want to play?"
+	;     12345678901234567
+	text "ua lo cundinca'a" ; text "A slot machine!"
+	line "se kelci xu do?"  ; line "Want to play?"
 	done
 
 _OutOfCoinsSlotMachineText::
-	text "Darn!"
-	line "Ran out of coins!"
+	text "oi no da sicni"
 	done
 
 _BetHowManySlotMachineText::
-	text "Bet how many"
-	line "coins?"
+	;     12345678901234567
+	text "do zivle xo"    ; text "Bet how many"
+	line "lo sicni?"      ; line "coins?"
 	done
 
 _StartSlotMachineText::
-	text "Start!"
+	text "ko co'a co'e"   ; text "Start!"
 	done
 
 _NotEnoughCoinsSlotMachineText::
-	text "Not enough"
-	line "coins!"
+	text "loi sicni na"   ; text "Not enough"
+	line "banzu"          ; line "coins!"
 	prompt
 
 _OneMoreGoSlotMachineText::
-	text "One more "
-	line "go?"
+	;     12345678901234567
+	text "xu kelci"    ; text "One more "
+	line "za'ure'u?"   ; line "go?"
 	done
 
 _LinedUpText::
-	text " lined up!"
+	text " lined up!"   ; TODO Not sure how to say "lined up"
 	line "Scored @"
 	TX_RAM wcf4b
 	text " coins!"
 	done
 
 _NotThisTimeText::
-	text "Not this time!"
-	prompt
+	text "Not this time!"  ; TODO Unsure of the context here.
+	prompt                 ; Slot machines, still?
 
 _YeahText::
-	text "Yeah!@@"
+	text "Yeah!@@"         ; TODO Not enough context. Where is this?
+
 
 _DexSeenOwnedText::
-	text "#DEX   Seen:@"
+	;     12345678901234567
+	text "lo pokste:"    ; text "#DEX   Seen:@"
+	line "viska li@"
 	TX_NUM wDexRatingNumMonsSeen, 1, 3
 	text ""
-	line "         Owned:@"
+	cont "ije ponse li@"    ; line "         Owned:@"
 	TX_NUM wDexRatingNumMonsOwned, 1, 3
 	db "@"
 
 _DexRatingText::
-	text "#DEX Rating", $6d
+	text "vamji fa li", $6d  ; text "#DEX Rating", $6d
 	done
 
 _GymStatueText1::
 	TX_RAM wGymCityName
 	text ""
-	line "#MON GYM"
-	cont "LEADER: @"
+	line "pokma jvidi'u"    ; line "#MON GYM"
+	cont "la @"
 	TX_RAM wGymLeaderName
-	text ""
+	text " jatna"
 
-	para "WINNING TRAINERS:"
+	para "se jinga la"      ; para "WINNING TRAINERS:"
 	line "<RIVAL>"
 	done
 
 _GymStatueText2::
 	TX_RAM wGymCityName
 	text ""
-	line "#MON GYM"
-	cont "LEADER: @"
+	line "pokma jvidi'u"   ; line "#MON GYM"
+	cont "la @"
 	TX_RAM wGymLeaderName
-	text ""
+	text " jatna"
 
-	para "WINNING TRAINERS:"
-	line "<RIVAL>"
-	cont "<PLAYER>"
+	para "se jinga"        ; para "WINNING TRAINERS:"
+	line "la <RIVAL> je"   ; line "<RIVAL>"
+	cont "la <PLAYER>"     ; cont "<PLAYER>"
 	done
 
 _ViridianCityPokecenterGuyText::
-	text "#MON CENTERs"
-	line "heal your tired,"
-	cont "hurt or fainted"
-	cont "#MON!"
-	done
+	text "pokma spita"     ; text "#MON CENTERs"
+	;     12345678901234567
+	line "mikce loi do"    ; line "heal your tired,"
+	cont "se xrani pokma"  ; cont "hurt or fainted"
+	done                   ; cont "#MON!"
 
 _PewterCityPokecenterGuyText::
 	text "Yawn!"
@@ -792,7 +803,7 @@ _WhatGoesAroundComesAroundText::
 	done
 
 _FightingDojoText::
-	text "FIGHTING DOJO"
+	text "DAMDI'U"
 	done
 
 _IndigoPlateauHQText::
@@ -801,10 +812,11 @@ _IndigoPlateauHQText::
 	done
 
 _RedBedroomSNESText::
-	text "<PLAYER> is"
-	line "playing the SNES!"
-	cont "...Okay!"
-	cont "It's time to go!"
+    ;     12345678901234567"
+    text "la <PLAYER>. ca"   ;text "<PLAYER> is"
+    line "kelci la .snes."   ;line "playing the SNES!"
+	cont "... i y ta'o nai"       ;cont "...Okay!"
+    cont "ko co'a klama"     ;cont "It's time to go!"
 	done
 
 _Route15UpstairsBinocularsText::
@@ -1902,14 +1914,16 @@ _DoYouWantToNicknameText::
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	;    "12345678901234567"
+	text "ua je'e i zo"        ;text "Right! So your"
+	line "<PLAYER> cmene do" ;line "name is <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "ie! i mi ca morji"    ;text "That's right! I"
+	line "i ra se cmene"     ;line "remember now! His"
+		cont "zo <RIVAL>!"
+	;cont "name is <RIVAL>!"
 	prompt
 
 _WillBeTradedText::
@@ -2007,13 +2021,13 @@ _FileDataDestroyedText::
 	prompt
 
 _WouldYouLikeToSaveText::
-	text "Would you like to"
-	line "SAVE the game?"
+	text "xu do djica lo nu"
+	line "VREJGAU lo cabna?"
 	done
 
 _GameSavedText::
-	text "<PLAYER> saved"
-	line "the game!"
+	text "la <PLAYER> ba'o"
+	line "vrejgau lo cabna!"
 	done
 
 _OlderFileWillBeErasedText::
@@ -2428,8 +2442,8 @@ INCLUDE "text/maps/saffron_pokecenter.asm"
 INCLUDE "text/maps/mr_psychics_house.asm"
 
 _PokemartGreetingText::
-	text "Hi there!"
-	next "May I help you?"
+	text "coi do! i xu"
+	next "mi ka'e sidju do?"
 	done
 
 _PokemonFaintedText::
@@ -2502,7 +2516,7 @@ _PokemartUnsellableItemText::
 	prompt
 
 _PokemartThankYouText::
-	text "Thank you!"
+	text "ki'e do!"
 	done
 
 _PokemartAnythingElseText::

@@ -1,55 +1,72 @@
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	;     12345678901234567
+	text "coi do!"     ;text "Hello there!"
+	line "i ti banli munje" ;line "Welcome to the"
+	cont "lo'e POKMONE!"  ;cont "world of #MON!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "i mi'e la CINDU"    ;para "My name is OAK!"
+	line "i mi jai misno"   ;line "People call me"
+	cont "fai lo ka na'o"
+		cont "POKMONE CTUCA!"         ;cont "the #MON PROF!"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@@"
+	;     12345678901234567
+	text "i lo terdi cu"    ;text "This world is"
+	line "se xabju lo'e"       ;line "inhabited by"
+	cont "danlu poi cmene"           ;cont "creatures called"
+	 cont "fa zo POKMONE!@@"
 
 _OakSpeechText2B::
-	text $51,"For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	;     12345678901234567
+	text $51,"i su'o prenu" ;text $51,"For some people,"
+	line "cu jinvi lo du'u"  ;line "#MON are"
+	cont "lo'e POKMONE cu"
+	cont "pendo sa'u"
+	cont "i su'o drata cu" ;cont "pets. Others use"
+	cont "pilno ra tu'a"       ;cont "them for fights."
+	cont "lo'e nundamba"
 
-	para "Myself..."
+	para "i mi .y ..."         ;para "Myself..."
 
-	para "I study #MON"
-	line "as a profession."
+	para "i mi poi'i"    ;para "I study #MON"
+	line "lo ka tadni"   ;line "as a profession."
+	cont "lo'e POKMONE"
+	cont "cu jibri ke'a"
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "i pa mai ..."   ;text "First, what is"
+	line "ma cmene do?"            ;line "your name?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	;     12345678901234567
+	text "i ti bersa"    ;text "This is my grand-"
+	line "lo bersa be mi"    ;line "son. He's been"
+	cont "i co'a lo nu do"  ;cont "your rival since"
+	cont "cifnu cu ta'e"          ;cont "you were a baby."
+	cont "jivna do fa ra"
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "i .y ... e'o"   ;para "...Erm, what is"
+	line "do mojgau mi"      ;line "his name again?"
+	cont "lo du'u ma kau"
+	cont "pu cmene ra"
 	prompt
 
 _OakSpeechText3::
-	text $52,"!"
+	;     12345678901234567
+	text "i ju'i do doi"
+	line "la ",$52  ;text $52,"!"  <PLAYER>
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "i do ji'a pu'o"    ;para "Your very own"
+	line "lifri lo steci"    ;line "#MON legend is"
+	cont "POKMONE ranmi!"             ;cont "about to unfold!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "i pa munje poi" ;para "A world of dreams"
+	line "so'i se senva je"      ;line "and adventures"
+	cont "so'i nuncapli'u"  ;cont "with #MON"
+	cont "cu pagbu ke'a cu"          ;cont "awaits! Let's go!"
+		cont "denpa tu'a do"
+	cont "i cfari ko'oi!"
 	done

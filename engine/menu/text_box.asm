@@ -218,13 +218,13 @@ TextBoxTextAndCoordTable:
 ; note that there is no terminator
 
 BuySellQuitText:
-	db   "BUY"
-	next "SELL"
-	next "QUIT@@"
+	db   "ERVE"
+	next "VECNU"
+	next "CLIVA@"
 
 UseTossText:
-	db   "USE"
-	next "TOSS@"
+	db   "PILNO"
+	next "VIMCU"
 
 JapaneseSaveMessageText:
 	db   "きろく"
@@ -235,7 +235,7 @@ JapaneseSpeedOptionsText:
 	next "おそい@"
 
 MoneyText:
-	db "MONEY@"
+	db "JDINI@"
 
 JapaneseMochimonoText:
 	db "もちもの@"
@@ -245,8 +245,8 @@ JapaneseMainMenuText:
 	next "さいしょから@"
 
 BattleMenuText:
-	db   "FIGHT ",$E1,$E2
-	next "ITEM  RUN@"
+	db   "DAMBA ",$E1,$E2
+	next "DACTI RIVBI@"
 
 SafariZoneBattleMenuText:
 	db   "BALL×       BAIT"
@@ -543,23 +543,23 @@ TwoOptionMenuStrings:
 	db   "NO"
 	next "YES@"
 .YesNoMenu
-	db   "YES"
-	next "NO@"
+	db   "IE "
+	next "NAI@"
 .NorthWestMenu
-	db   "NORTH"
-	next "WEST@"
+	db   "BERTI"
+	next "STICI"
 .SouthEastMenu
-	db   "SOUTH"
-	next "EAST@"
+	db   "SNANU"
+	next "STUNA"
 .NorthEastMenu
-	db   "NORTH"
-	next "EAST@"
+	db   "BERTI"
+	next "STUNA"
 .TradeCancelMenu
-	db   "TRADE"
-	next "CANCEL@"
+	db   "CANJA"
+	next "STIGAU@"
 .HealCancelMenu
-	db   "HEAL"
-	next "CANCEL@"
+	db   "KANRYGAU"
+	next "STIGAU@"
 
 DisplayFieldMoveMonMenu:
 	xor a

@@ -1,13 +1,31 @@
-# Pokémon Red and Blue
+# Lojban Translation of Pokémon Red and Blue
 
-This is a disassembly of Pokémon Red and Blue.
+This is a fan translation of the original Gameboy games Pokemon Red and Blue
+into [Lojban](http://lojban.org).
 
-It builds the following roms:
+## Translation
 
-* Pokemon Red (UE) [S][!].gb  `md5: 3d45c1ee9abd5738df46d2bdda8b57dc`
-* Pokemon Blue (UE) [S][!].gb `md5: 50927e843568814f7ed45ec4f944bd8b`
+**Current state:** Only a few things are translated: Prof. Oak's opening speech and
+item names, and some other miscellaneous dialogue.
 
-To set up the repository, see [**INSTALL.md**](INSTALL.md).
+**Priorities:** Names of Pokemon and attacks.
+
+Pull requests are most welcome, as are "bugs" filed with translations, if you
+aren't prepared to edit the assembly itself.
+
+See [Lojban.md](Lojban.md) for notes and things to consider when translating.
+
+The biggest rule of translation is **keep it short**. Space is very limited on
+the screen, and to a lesser extent in the Gameboy "cartridge".
+
+## Installation
+
+See [**INSTALL.md**](INSTALL.md) for instructions on setup.
+
+## Attribution
+
+Many thanks to the "pret" project, from which this is forked. Their complete
+disassembly of the original games makes this project many times easier.
 
 
 ## See also
