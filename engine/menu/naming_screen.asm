@@ -366,10 +366,10 @@ PrintAlphabet:
 	jp Delay3
 
 LowerCaseAlphabet:
-	db "abcdefghijklmnopqrstuvwxyz ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥UPPER CASE@"
+	db "abcdefgijklmnoprstuvxyzwq'h×():;[]",$e1,$e2,"-?!♂♀/⠄,¥BARDA LERFU@"
 
 UpperCaseAlphabet:
-	db "ABCDEFGHIJKLMNOPQRSTUVWXYZ ×():;[]",$e1,$e2,"-?!♂♀/⠄,¥lower case@"
+	db "ABCDEFGIJKLMNOPRSTUVXYZWQ'H×():;[]",$e1,$e2,"-?!♂♀/⠄,¥cmalu lerfu@"
 
 PrintNicknameAndUnderscores:
 	call CalcStringLength
@@ -500,10 +500,10 @@ PrintNamingText:
 	jp PlaceString
 
 YourTextString:
-	db "DO SE"
+	db "MA DO @"
 
 RivalsTextString:
-	db "JIVNA @"
+	db "MA LO JIVNA CU @"
 
 NameTextString:
 	db "CMENE@"
