@@ -117,12 +117,12 @@ LoadTownMap_Nest:
 	ld [hl], $ff
 	push hl
 	call DisplayWildLocations
-	call GetMonName
-	coord hl, 1, 0
+	ld de, MonsNestText ; call GetMonName
+	coord hl, 0, 0
 	call PlaceString
 	ld h, b
 	ld l, c
-	ld de, MonsNestText
+	call GetMonName ; ld de, MonsNestText
 	call PlaceString
 	call WaitForTextScrollButtonPress
 	call ExitTownMap
@@ -132,7 +132,7 @@ LoadTownMap_Nest:
 	ret
 
 MonsNestText:
-	db "'s NEST@"
+	db "ZDANI LOI @" ; "'s NEST@"
 
 LoadTownMap_Fly:
 	call ClearSprites
@@ -244,7 +244,7 @@ LoadTownMap_Fly:
 	jr .pressedDown
 
 ToText:
-	db "To@"
+	db "KLAMA LA @"
 
 BuildFlyLocationsList:
 	ld hl, wFlyLocationsList - 1

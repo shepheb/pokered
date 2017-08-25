@@ -26,7 +26,7 @@ _OakSpeechText2B::
 	cont "i su'o drata cu" ;cont "pets. Others use"
 	cont "pilno ra tu'a"       ;cont "them for fights."
 	cont "lo'e nundamba"
-	para "i mi .y ..."         ;para "Myself..."
+	para "i mi y ..."         ;para "Myself..."
 	para "i mi poi'i"    ;para "I study #MON"
 	line "lo ka tadni"   ;line "as a profession."
 	cont "lo'e POKMONE"
@@ -47,20 +47,20 @@ _IntroduceRivalText::
 	cont "cifnu cu ta'e"          ;cont "you were a baby."
 	cont "jivna do fa ra"
 
-	para "i .y ... e'o"   ;para "...Erm, what is"
+	para "i y ... e'o"   ;para "...Erm, what is"
 	line "do mojgau mi"      ;line "his name again?"
 	cont "lo du'u ma kau"
 	cont "pu cmene ra"
 	prompt
 
 _OakSpeechText3::
-	;     12345678901234567
+	;    "123456789012345678"
 	text "i ju'i do doi"
 	line "la ",$52  ;text $52,"!"  <PLAYER>
 
 	para "i do ji'a pu'o"    ;para "Your very own"
 	line "lifri lo steci"    ;line "#MON legend is"
-	cont "POKMONE ranmi!"    ;cont "about to unfold!"
+	cont "POKMONE bo ranmi!"    ;cont "about to unfold!"
 
 	para "i pa munje poi" ;para "A world of dreams"
 	line "so'i se senva je"      ;line "and adventures"

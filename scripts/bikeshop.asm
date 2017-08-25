@@ -80,7 +80,7 @@ BikeShopText1:
 
 BikeShopMenuText:
 	db   "BICYCLE"
-	next "CANCEL@"
+	next "STIGAU@"
 
 BikeShopMenuPrice:
 	db "¥1000000@"

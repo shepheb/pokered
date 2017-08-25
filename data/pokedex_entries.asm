@@ -413,7 +413,7 @@ GrowlitheDexEntry:
 	db "@"
 
 OnixDexEntry:
-	db "ROCK SNAKE@"
+	db "ROKCYSINCE@" ; "ROCK SNAKE@"
 	db 28,10
 	dw 4630
 	TX_FAR _OnixDexEntry
@@ -427,7 +427,7 @@ FearowDexEntry:
 	db "@"
 
 PidgeyDexEntry:
-	db "TINY BIRD@"
+	db "CMACIPNI@" ; "TINY BIRD@"
 	db 1,0
 	dw 40
 	TX_FAR _PidgeyDexEntry

@@ -1,13 +1,13 @@
 MonsterNames:
-	db "ROKCARCNAS" ;db "RHYDON@@@@" rock-drill
-	db "DASKYRES@@" ;db "KANGASKHAN" pocket-reptile
-	db "NIDONLAS@@" ;db "NIDORAN♂@@"
-	db "LURCRIDAS@" ;db "CLEFAIRY@@"
+	db "NAZRAL@@@@" ;db "RHYDON@@@@" 
+	db "KANGUTUR@@" ;db "KANGASKHAN" 
+	db "NIDORAN♂@@" ;db "NIDORAN♂@@"
+	db "LUNRID@@@@" ;db "CLEFAIRY@@"
 	db "TUNPASR@@@" ;db "SPEAROW@@@"
 	db "LIDBOL@@@@" ;db "VOLTORB@@@" lightning-ball
 	db "NIDONAUS@@" ;db "NIDOKING@@"
 	db "SNOBUN@@@@" ;db "SLOWBRO@@@"
-	db "IEDRYRESPA" ;db "IVYSAUR@@@" ivy-reptile
+	db "EDRADIN@@@" ;db "IVYSAUR@@@" ivy-reptile
 	db "SOVCAMBAS@" ;db "EXEGGUTOR@" egg-kill
 	db "TACPEC@@@@" ;db "LICKITUNG@" tongue-touch
 	db "SOVSON@@@@" ;db "EXEGGCUTE@" egg-warrior
@@ -16,10 +16,10 @@ MonsterNames:
 	db "NIDORAN♀@@" ; Preserved - already a cmevla.
 	db "NIDONIM@@@" ;db "NIDOQUEEN@"
 	db "CUBONE@@@@" ; TODO
-	db "RO'IJIRNAS" ;db "RHYHORN@@@" rock-horn
+	db "NAZIR@@@@@" ;db "RHYHORN@@@" rock-horn
 	db "LAPRAS@@@@" ; Preserved - already a cmevla.
-	db "BALGERKUS@" ;db "ARCANINE@@"
-	db "MIUS@@@@@@" ;db "MEW@@@@@@@"
+	db "ARKANIN@@@" ;db "ARCANINE@@"
+	db "MUT@@@@@@@" ;db "MEW@@@@@@@"
 	db "GARADOS@@@" ; Preserved - already (nearly) a cmevla.
 	db "CAKPOS@@@@" ;db "SHELLDER@@" shell-owner
 	db "NULSNIDER@" ;db "TENTACOOL@"
@@ -32,9 +32,9 @@ MonsterNames:
 	db "CRINA'US@@" ;db "MISSINGNO."
 	db "CRINA'US@@" ;db "MISSINGNO."
 	db "DAGERKUS@@" ;db "GROWLITHE@"
-	db "SINCRONIKS" ;db "ONIX@@@@@@"
+	db "ONIK@@@@@@" ;db "ONIX@@@@@@"
 	db "TEPASR@@@@" ;db "FEAROW@@@@"
-	db "CMAKOLOM@@" ;db "PIDGEY@@@@"
+	db "CIPCIP@@@@" ;db "PIDGEY@@@@"
 	db "SNOBEB@@@@" ;db "SLOWPOKE@@"
 	db "KADABRAS@@" ;db "KADABRA@@@"
 	db "FEGRO'IS@@" ;db "GRAVELER@@"
@@ -110,7 +110,7 @@ MonsterNames:
 	db "LEDCINKIS@" ;db "PARAS@@@@@"
 	db "NULSARLUS@" ;db "POLIWHIRL@"
 	db "BRASARLUS@" ;db "POLIWRATH@"
-	db "CURVIDNUS@" ;db "WEEDLE@@@@"
+	db "JIRNUR@@@@" ;db "WEEDLE@@@@"
 	db "VIDJEMNAS@" ;db "KAKUNA@@@@"
 	db "VIDAPIS@@@" ;db "BEEDRILL@@"
 	db "CRINA'US@@" ;db "MISSINGNO."
@@ -129,7 +129,7 @@ MonsterNames:
 	db "JAUDATKAS@" ;db "GOLDUCK@@@"
 	db "HYPNO@@@@@" ; TODO
 	db "BLUCIROP@@" ;db "GOLBAT@@@@"
-	db "MIURES@@@@" ;db "MEWTWO@@@@"
+	db "MUTUR@@@@@" ;db "MEWTWO@@@@"
 	db "SNORLAX@@@" ; TODO
 	db "MAGIKARP@@" ; TODO
 	db "CRINA'US@@" ;db "MISSINGNO."
@@ -147,12 +147,12 @@ MonsterNames:
 	db "CRINA'US@@" ;db "MISSINGNO."
 	db "TEPRU'IS@@" ;db "HAUNTER@@@"
 	db "ABRAS@@@@@" ;db "ABRA@@@@@@"
-	db "ALYKAZAM@@" ;db "ALAKAZAM@@"
+	db "ALAKAZAM@@" ;db "ALAKAZAM@@"
 	db "NULKOLOM@@" ;db "PIDGEOTTO@"
 	db "BRAKOLOM@@" ;db "PIDGEOT@@@"
 	db "TARMEN@@@@" ;db "STARMIE@@@" star-mind - water/psychic type
-	db "BALJYRESPA" ;db "BULBASAUR@"
-	db "KAVBYRESPA" ;db "VENUSAUR@@"
+	db "BALJADIN@@" ;db "BULBASAUR@"
+	db "SOLDIN@@@@" ;db "VENUSAUR@@"
 	db "KUSNIDER@@" ;db "TENTACRUEL"
 	db "CRINA'US@@" ;db "MISSINGNO."
 	db "GOLDEEN@@@" ; TODO
@@ -179,7 +179,7 @@ MonsterNames:
 	db "JELKAMELON" ;db "CHARMELEON"
 	db "SONCAKYS@@" ;db "WARTORTLE@"
 	db "JELDRAKOS@" ;db "CHARIZARD@"
-	db "CRINA'US@@" ;db "MISSINGNO."
+	db "CAUNAM@@@@" ;db "MISSINGNO."
 	db "CRINA'US@@" ;db "MISSINGNO."
 	db "CRINA'US@@" ;db "MISSINGNO."
 	db "CRINA'US@@" ;db "MISSINGNO."

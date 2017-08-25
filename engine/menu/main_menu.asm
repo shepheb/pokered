@@ -336,7 +336,7 @@ NewGameText:
 	next "STIKYGAU@"
 
 CableClubOptionsText:
-	db   "TRADE CENTER"
+	db   "CANJA STUZI"
 	next "COLOSSEUM"
 	next "STIGAU@"
 
@@ -422,8 +422,8 @@ PrintPlayTime:
 
 SaveScreenInfoText:
 	db   "KELCI"
-	next "SINXA    "
-	next "POKéCUK  "
+	next "SINXA"
+	next "POKéCUK"
 	next "TEMCI@"
 
 DisplayOptionMenu:

@@ -69,15 +69,15 @@ TrainerNamePointers:
 	dw wTrainerName
 
 YoungsterName:
-	db "YOUNGSTER@"
+	db "TCINEIDJA@" ; "YOUNGSTER@"
 BugCatcherName:
-	db "BUG CATCHER@"
+	db "CINKI KAVBU@" ; "BUG CATCHER@"
 LassName:
-	db "LASS@"
+	db "FANZA NIXLI@" ; "LASS@"
 JrTrainerMName:
-	db "JR.TRAINER♂@"
+	db "CITNO JITRO@" ; "JR.TRAINER♂@"
 JrTrainerFName:
-	db "JR.TRAINER♀@"
+	db "CITNO JITRO@" ; JR.TRAINER♀@"
 PokemaniacName:
 	db "POKéMANIAC@"
 SuperNerdName:
@@ -89,9 +89,9 @@ EngineerName:
 JugglerXName:
 	db "JUGGLER@"
 SwimmerName:
-	db "SWIMMER@"
+	db "LIMNA@" ; "SWIMMER@"
 BeautyName:
-	db "BEAUTY@"
+	db "MELTCE@" ; "BEAUTY@"
 RockerName:
 	db "ROCKER@"
 JugglerName:
