@@ -22,18 +22,18 @@ INCLUDE "hram.asm"
 SECTION "Text 1", ROMX[$4000], BANK[TEXT_1]
 
 _CardKeySuccessText1::
-	text "snada@@@"
+	text "u'a@@@"				; "snada@@@"
 
 _CardKeySuccessText2::
 	text ""
 	;     12345678901234567
-	line "lo ckiku karda cu"    ; line "The CARD KEY"
-	cont "kargau lo vorme"      ; cont "opened the door!"
+	line "lo CKIKYKARDA pu"    ; line "The CARD KEY"
+	cont "kargau lo vorme!"      ; cont "opened the door!"
 	done
 
 _CardKeyFailText::
-	text ".uinai nitcu"      ; text "Darn! It needs a"
-	line "lo ckiku karda"    ; line "CARD KEY!"
+	text "oi! i nitcu tu'a"      ; text "Darn! It needs a"
+	line "su'o CKIKYKARDA!"    ; line "CARD KEY!"
 	done
 
 _TrainerNameText::
@@ -41,18 +41,19 @@ _TrainerNameText::
 	text ": @@"
 
 _NoNibbleText::
-	text "no da batci"     ; text "Not even a nibble!"
+	text "no da pu batci!"     ; text "Not even a nibble!"
 	prompt
 
 _NothingHereText::
-	text "ti kunti"
+	text "si'au no da"
+	line "zvati ti"
 	; text "Looks like there's"
 	; line "nothing here."
 	prompt
 
 _ItsABiteText::
-	text ".uesai"         ; text "Oh!"
-	line "da batci"       ; line "It's a bite!"
+	text "ue!"      		   ; text "Oh!"
+	line "i su'o da batci"     ; line "It's a bite!"
 	prompt
 
 _ExclamationText::
@@ -60,13 +61,13 @@ _ExclamationText::
 	done
 
 _GroundRoseText::
-	text "Ground rose up"
-	line "somewhere!"
+	text "lo loldi pu bu'u" ; "Ground rose up"
+	line "su'o da galze'a!" ; "up somewhere!"
 	done
 
 _BoulderText::
-	text "This requires"
-	line "STRENGTH to move!"
+	text "lo nu TSALI cu" ; "This requires"
+	line "sarcu lo nu muvgau"; "STRENGTH to move!"
 	done
 
 _MartSignText::
@@ -77,54 +78,56 @@ _MartSignText::
 	done
 
 _PokeCenterSignText::
-    text "ko kanrygau lo "     ;text "Heal Your #MON!"
-    line "POKMONE pe do!"       ;line "#MON CENTER"
-    cont "i POKMONE RALDI'U"
+    text "Tua roe suo posuo"     ;text "Heal Your #MON!"
+    line "POKEMOO ba!"       ;line "#MON CENTER"
+    cont "POKEMOO JOOJIO!"
 	done
 
 _FoundItemText::
 	;     12345678901234567"
-	text "la <PLAYER> cu zvafa'i" ;text "<PLAYER> found"  - overrun OK
-	line "pa @"
+	text "la <PLAYER> cu" ;text "<PLAYER> found"  - overrun OK
+	line "zvafa'i pa @"
+	cont ""
 	TX_RAM wcf4b
 	text "!@@"
 
 _NoMoreRoomForItemText::
 	;     12345678901234567"
-	text "noda canlu lo"     ;text "No more room for"
-	line "dacti"             ;line "items!"
+	text "lo dakli pe do"     ;text "No more room for"
+	line "cu xa'o culno!"             ;line "items!"
 	done
 
 _OaksAideHiText::
 	;     12345678901234567
-	text "coi xu morji"      ; text "Hi! Remember me?"
-	line "fi mi?"            ; line "I'm PROF.OAK's"
-	cont "mi sidju la CINDU" ; cont "AIDE!"
+	text "coi! i xu morji mi?"      ; text "Hi! Remember me?"
+	line "i mi du LO SIDJU"            ; line "I'm PROF.OAK's"
+	cont "BE LA CINDU!"				 ; cont "AIDE!"
 
-	para "da'i do kavbu @"     ; para "If you caught @"
+	para "i ro kavbu be @"     ; para "If you caught @"
 	TX_NUM hOaksAideRequirement, 1, 3
 	text ""
-	line "lo klesi be lo"    ; line "kinds of #MON,"
-	cont "pokma .i .ei mi"   ; cont "I'm supposed to"
-	cont "dunda lo"
-	cont "@"
+	line "POKMONE klesi cu"    ; line "kinds of #MON,"
+	cont "ka'e cpacu fi mi"   ; cont "I'm supposed to"
+	cont "fe pa @"
 	TX_RAM wOaksAideRewardItemName
 	text "!"
 
 	;     12345678901234567
-	para "doi la <PLAYER>"    ; para "So, <PLAYER>! Have"
-	line "xu do kavbu @"      ; line "you caught at"
+	para "i doi la <PLAYER>"    ; para "So, <PLAYER>! Have"
+	line "i xu do pu kavbu"      ; line "you caught at"
+	cont "su'o @" ; "at least"
 	TX_NUM hOaksAideRequirement, 1, 3
-	text "klesi be lo pokma"  ; cont "least @"
+	text "klesi be"  ; cont "least @"
+	cont "lo'e POKMONE?"
 	done
 
 _OaksAideUhOhText::
-	text ".uinai za'a do pu"  ; text "Let's see..."
-	line "kavbu @"            ;line "Uh-oh! You have"
-	; cont "caught only @"
+	text "i e'e mi'o kancu ..."  ; text "Let's see..."
+	line "i ua do ponse @"            ;line "Uh-oh! You have"
+	cont "" ; "caught only @"
 	TX_NUM hOaksAideNumMonsOwned, 1, 3
-	text "@lo"
-	cont "klesi be lo pokma"  ; cont "kinds of #MON!"
+	text "@"
+	cont "klesi be lo'e"  ; cont "kinds of #MON!"
 
 	para "lo nu do kavbu"     ; para "You need @"
 	TX_NUM hOaksAideRequirement, 1, 3
@@ -1478,9 +1481,10 @@ _EnemyAppearedText::
 	prompt
 
 _TrainerWantsToFightText::
+	text "lo @"
 	TX_RAM wTrainerName
-	text " wants"
-	line "to fight!"
+	text " cu" ; " wants"
+	line "djica lo nu damba"; "to fight!"
 	prompt
 
 _UnveiledGhostText::

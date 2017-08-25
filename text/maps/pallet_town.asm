@@ -47,9 +47,9 @@ _PalletTownText5::
 	done
 
 _PalletTownText6::
-	text $52,"'s house "
+	text "zdani la ",$52
 	done
 
 _PalletTownText7::
-	text $53,"'s house "
+	text "zdani la ",$53
 	done

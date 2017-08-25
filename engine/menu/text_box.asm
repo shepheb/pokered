@@ -166,9 +166,9 @@ TextBoxTextAndCoordTable:
 	db 3,0   ; text coordinates
 
 	db USE_TOSS_MENU_TEMPLATE
-	db 13,10,19,14 ; text box coordinates
+	db 12,10,19,14 ; text box coordinates
 	dw UseTossText
-	db 15,11 ; text coordinates
+	db 14,11 ; text coordinates
 
 	db JP_SAVE_MESSAGE_MENU_TEMPLATE
 	db 0,0,7,5     ; text box coordinates
@@ -181,9 +181,9 @@ TextBoxTextAndCoordTable:
 	db 2,7   ; text coordinates
 
 	db BATTLE_MENU_TEMPLATE
-	db 8,12,19,17  ; text box coordinates
+	db 6,12,19,17  ; text box coordinates
 	dw BattleMenuText
-	db 10,14 ; text coordinates
+	db 8,14 ; text coordinates
 
 	db SAFARI_BATTLE_MENU_TEMPLATE
 	db 0,12,19,17  ; text box coordinates
@@ -224,7 +224,7 @@ BuySellQuitText:
 
 UseTossText:
 	db   "PILNO"
-	next "VIMCU"
+	next "VIMCU@"
 
 JapaneseSaveMessageText:
 	db   "きろく"
@@ -249,13 +249,13 @@ BattleMenuText:
 	next "DACTI RIVBI@"
 
 SafariZoneBattleMenuText:
-	db   "BALL×       BAIT"
-	next "THROW ROCK  RUN@"
+	db   "BOLCI×     XLURA" ; "BALL×       BAIT"
+	next "ROKCI      CLIVA@" ; "THROW ROCK  RUN@"
 
 SwitchStatsCancelText:
 	db   "SWITCH"
 	next "STATS"
-	next "CANCEL@"
+	next "STIGAU@"
 
 JapaneseAhText:
 	db "アッ!@"
@@ -540,8 +540,8 @@ TwoOptionMenuStrings:
 	dw .NoYesMenu
 
 .NoYesMenu
-	db   "NO"
-	next "YES@"
+	db   "NAI"
+	next "IE @"
 .YesNoMenu
 	db   "IE "
 	next "NAI@"
@@ -695,7 +695,7 @@ FieldMoveNames:
 PokemonMenuEntries:
 	db   "STATS"
 	next "SWITCH"
-	next "CANCEL@"
+	next "STIGAU@"
 
 GetMonFieldMoves:
 	ld a, [wWhichPokemon]

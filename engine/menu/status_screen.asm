@@ -129,7 +129,7 @@ StatusScreen:
 	ld de, wLoadedMonStatus
 	call PrintStatusCondition
 	jr nz, .StatusWritten
-	coord hl, 16, 6
+	coord hl, 13, 6
 	ld de, OKText
 	call PlaceString ; "OK"
 .StatusWritten
@@ -205,23 +205,23 @@ NamePointers2:
 	dw wDayCareMonName
 
 Type1Text:
-	db "TYPE1/", $4e
+	db "KLESI1/", $4e
 
 Type2Text:
-	db "TYPE2/", $4e
+	db "KLESI2/", $4e
 
 IDNoText:
 	db $73, "№/", $4e
 
 OTText:
-	db   "OT/"
+	db   "KJ/" ; "OT/"
 	next "@"
 
 StatusText:
-	db "STATUS/@"
+	db "'t'd'l/@" ; "STATUS/@"
 
 OKText:
-	db "OK@"
+	db " KANRO@" ; "OK@"
 
 ; Draws a line starting from hl high b and wide c
 DrawLineBox:
@@ -289,10 +289,10 @@ PrintStat:
 	ret
 
 StatsText:
-	db   "ATTACK"
-	next "DEFENSE"
-	next "SPEED"
-	next "SPECIAL@"
+	db   "TSALI" ; "ATTACK"
+	next "FAPRYKA'E" ; "DEFENSE"
+	next "SUTRA" ; "SPEED"
+	next "STECYCRE@" ; "SPECIAL@"
 
 StatusScreen2:
 	ld a, [hTilesetType]

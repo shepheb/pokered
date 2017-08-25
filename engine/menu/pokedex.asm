@@ -360,19 +360,19 @@ DrawPokedexVerticalLine:
 	ret
 
 PokedexSeenText:
-	db "SEEN@"
+	db $C0,$C1,$C2,"@" ; "SEEN@"
 
 PokedexOwnText:
-	db "OWN@"
+	db $D0,$D1,$D2,"@"; "OWN@"
 
 PokedexContentsText:
-	db "CONTENTS@"
+	db "SE LISTE@" ; "CONTENTS@"
 
 PokedexMenuItemsText:
-	db   "DATA"
-	next "CRY"
-	next "AREA"
-	next "QUIT@"
+	db   $C3,$C4,$C5 ; "DATA"
+	next $D3,$D4,$D5 ; "CRY"
+	next $C6,$C7,$C8 ; "AREA"
+	next $D6,$D7,$D8,"@" ; "EXIT@"
 
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:
@@ -518,14 +518,14 @@ ShowPokedexDataInternal:
 	coord hl, 12, 6
 	lb bc, 1, 2
 	call PrintNumber ; print feet (height)
-	ld a,$60 ; feet symbol tile (one tick)
+	ld a,"." ; $60 ; feet symbol tile (one tick)
 	ld [hl],a
 	inc de
 	inc de ; de = address of inches (height)
 	coord hl, 15, 6
 	lb bc, LEADING_ZEROES | 1, 2
 	call PrintNumber ; print inches (height)
-	ld a,$61 ; inches symbol tile (two ticks)
+	ld a,"" ; $61 ; inches symbol tile (two ticks)
 	ld [hl],a
 ; now print the weight (note that weight is stored in tenths of pounds internally)
 	inc de
@@ -590,8 +590,8 @@ ShowPokedexDataInternal:
 	ret
 
 HeightWeightText:
-	db   "HT  ?",$60,"??",$61
-	next "WT   ???lb@"
+	db   $CD,$CE,$CF,"  ???",$60 ; "HT  ?",$60,"??",$61
+	next $DD,$DE,$DF,"  ???@" ; "WT   ???lb@"
 
 ; XXX does anything point to this?
 PokeText:

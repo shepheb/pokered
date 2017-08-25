@@ -1,11 +1,12 @@
 _RhydonDexEntry::
-	text "Protected by an"
-	next "armor-like hide,"
-	next "it is capable of"
+       ; "123456789012345678"
+	text "se bandu lo nu pa" ; "Protected by an"
+	next "jdari skapi cu" ; "armor-like hide,"
+	next "gacri ko'a i kakne" ; "it is capable of"
 
-	page "living in molten"
-	next "lava of 3,600"
-	next "degrees"
+	page "lo ka renvi ne'i" ; "living in molten"
+	next "lo'e likro'i poi" ; "lava of 3,600"
+	next "jacke'o li 3,600" ; "degrees"
 	dex
 
 _KangaskhanDexEntry::
@@ -329,13 +330,14 @@ _FearowDexEntry::
 	dex
 
 _PidgeyDexEntry::
-	text "A common sight in"
-	next "forests and woods."
-	next "It flaps its"
+       ; "123456789012345678"
+	text "ta'e viska ko'a" ; "A common sight in"
+	next "ne'i lo'e rictu'a" ; "forests and woods."
+	next "i ta'e muvgau lo" ; "It flaps its"
 
-	page "wings at ground"
-	next "level to kick up"
-	next "blinding sand"
+	page "nalci ja'e lo nu" ; "wings at ground"
+	next "lo brife cu renro" ; "level to kick up"
+	next "lo canre lo bradi" ; "blinding sand"
 	dex
 
 _SlowpokeDexEntry::
@@ -1099,13 +1101,14 @@ _SnorlaxDexEntry::
 	dex
 
 _MagikarpDexEntry::
-	text "In the distant"
-	next "past, it was"
-	next "somewhat stronger"
-
-	page "than the horribly"
-	next "weak descendants"
-	next "that exist today"
+       ; "123456789012345678"
+	text "lo voi dzena ko'a" ; "In the distant"
+	next "je jmive ca lo" ; "past, it was"
+	next "cabda'o purci pu" ; "somewhat stronger"
+	
+	page "tsalymau ko'a ne" ; "than the horribly"
+	next "lo cabna cedra je"
+	next "noi mabla ruble" ; "that exist today"
 	dex
 
 _MukDexEntry::
@@ -1149,13 +1152,14 @@ _ElectrodeDexEntry::
 	dex
 
 _ClefableDexEntry::
-	text "A timid fairy"
-	next "#MON that is"
-	next "rarely seen. It"
+       ; "123456789012345678"
+	text "na'e virnu elfe i" ; "A timid fairy"
+	next "loi nu viska ko'a" ; "#MON that is"
+	next "cu to'e cafne" ; "rarely seen. It"
 
-	page "will run and hide"
-	next "the moment it"
-	next "senses people"
+	page "i rivli'a ca ro nu" ; "will run and hide"
+	next "ko'a ganse lo'e nu"; "the moment it"
+	next "su remna cu zvajbi" ; "senses people"
 	dex
 
 _WeezingDexEntry::
